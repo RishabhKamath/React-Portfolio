@@ -1,36 +1,13 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React, { useState } from "react";
-import { Route, NavLink, Switch } from "react-router-dom";
+// import { Route, NavLink, Switch } from "react-router-dom";
+import Header from './components/Header';
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import "./styles/App.css";
+import Footer from "./components/Footer";
+import "./App.css";
+import "./styles/"
 
 function App() {
   const [selectedNav, setSelectedNav] = useState("About Me");
@@ -42,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Developer Name</h1>
+        <h1>Rishabh Kamath</h1>
         <nav className="App-nav">
           <NavLink
             to="/about-me"
